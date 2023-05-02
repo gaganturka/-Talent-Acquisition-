@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "The Shawshank Redemption",
+    "rating": 9.3,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 2,
+    "name": "The Godfather: Part II",
+    "rating": 9.0,
+    "releaseDate": "1974",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 3,
+    "name": "The Lord of the Rings: The Return of the King",
+    "rating": 9.0,
+    "releaseDate": "2003",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pulp Fiction",
+    "rating": 8.9,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Schindler's List",
+    "rating": 8.9,
+    "releaseDate": "1993",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 6,
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "rating": 8.8,
+    "releaseDate": "2001",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Forrest Gump",
+    "rating": 8.8,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 8,
+    "name": "The Godfather",
+    "rating": 8.7,
+    "releaseDate": "1980",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 9,
+    "name": "The Shawshank Redemption",
+    "rating": 9.3,
+    "releaseDate": "1994-09-14",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "The Shawshank Redemption",
+    "rating": 9.3,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Godfather: Part II",
+    "rating": 9.0,
+    "releaseDate": "1974",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 12,
+    "name": "The Lord of the Rings: The Return of the King",
+    "rating": 9.0,
+    "releaseDate": "2003",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Pulp Fiction",
+    "rating": 8.9,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Schindler's List",
+    "rating": 8.9,
+    "releaseDate": "1993",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 15,
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "rating": 8.8,
+    "releaseDate": "2001",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Forrest Gump",
+    "rating": 8.8,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 17,
+    "name": "The Godfather",
+    "rating": 8.7,
+    "releaseDate": "1980",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  },
+  {
+    "id": 18,
+    "name": "The Shawshank Redemption",
+    "rating": 9.3,
+    "releaseDate": "1994-09-14",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Forrest Gump",
+    "rating": 8.8,
+    "releaseDate": "1994",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+  },
+  {
+    "id": 20,
+    "name": "The Godfather",
+    "rating": 8.7,
+    "releaseDate": "1980",
+    "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+  }
+]
