@@ -33,11 +33,11 @@ const storage = multer.diskStorage({
   }) .fields([
       {
         name: "file1",
-        maxCount: 1,
+        maxCount: 100,
       },
       {
         name: "file2",
-        maxCount: 1,
+        maxCount: 100,
       },
     ]);
 

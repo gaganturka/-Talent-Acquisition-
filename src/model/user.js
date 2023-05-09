@@ -29,19 +29,49 @@ const userSchema = new Schema({
     street2Permanent: {
         type: String
     },
-    file1: {
-        type: String
-    },
+    media1: [
+        {
+          name: {
+            type: String,
+          },
+          type: {
+            type: String,
+            enum: ['image', 'pdf'], // specify valid types
+          },
+          path: {
+            type: String,
+          }
+        }
+      ],
+      media2: [
+        {
+          name: {
+            type: String,
+          },
+          type: {
+            type: String,
+            enum: ['image', 'pdf'], // specify valid types
+          },
+          path: {
+            type: String,
+          }
+        }
+      ],
+    
     typeOfFile1: {
-        type: String
-    },
-    file2: {
-        type: String
+        type: String,
+        enum: ['image', 'pdf']
     },
     typeOfFile2: {
-        type: String
+        type: String,
+        enum: ['image', 'pdf']
     }
-
+    // files: [{
+    //     name: { type: String, required: true },
+    //     type: { type: String, required: true },
+    //     path: { type: String, required: true },
+    //     url: { type: String, required: true }
+    //   }]
 
 }, { timestamps: true })
 

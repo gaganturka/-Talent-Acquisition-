@@ -5,7 +5,7 @@ const Joi = require('joi')
 const register = async (req, res) => {
     try {
         const requestBody = req.body;
-        console.log('requestBody', req.files);
+      
 
 
         const userSchemaValidation = Joi.object({
@@ -41,51 +41,79 @@ const register = async (req, res) => {
 
         const result = userSchemaValidation.validate(requestBody)
         if (result.error == null) {
+            const files1 = [];
 
             if (req.files?.file1) {
+              for (let i = 0; i < req.files.file1.length; i++) {
+                const file = req.files.file1[i];
                 if (requestBody.typeOfFile1 == 'image') {
-                    if (/jpeg|jpg|png|gif/.test(req.files?.file1[0].mimetype.split('/')[1])) {
-                        requestBody["file1"] = `static/${req.files?.file1[0]?.filename}`
-                    } else {
-                        return showError({ message: "Please Upload Valid Image According To Its Type" }, res)
-                    }
+                  if (/jpeg|jpg|png|gif/.test(file.mimetype.split('/')[1])) {
+                    files1.push({
+                      name: file.originalname,
+                      type: 'image',
+                      path: `static/${file.filename}`,
+                      
+                    });
+                  } else {
+                    return showError({ message: "Please Upload Valid Image According To Its Type" }, res);
+                  }
+                } else if (requestBody.typeOfFile1 == 'pdf') {
+                  if (/pdf/.test(file.mimetype.split('/')[1])) {
+                    files1.push({
+                      name: file.originalname,
+                      type: 'pdf',
+                      path: `static/${file.filename}`,
+            
+                    });
+                  } else {
+                    return showError({ message: "Please Upload Valid file According To Its Type" }, res);
+                  }
                 }
-                else if (requestBody.typeOfFile1 == 'pdf') {
-
-                    if (/pdf/.test(req.files?.file1[0].mimetype.split('/')[1])) {
-                        requestBody["file1"] = `static/${req.files?.file1[0]?.filename}`
-                    } else {
-                        return showError({ message: "Please Upload Valid file According To Its Type" }, res)
-                    }
-                }
-
+              }
             } else {
-                return showError({ message: "Please Upload Document It Is Required Field" }, res)
+              return showError({ message: "Please Upload Document It Is Required Field" }, res);
             }
 
+            const files2 = [];
+
             if (req.files?.file2) {
+              for (let i = 0; i < req.files.file2.length; i++) {
+                const file = req.files.file2[i];
                 if (requestBody.typeOfFile2 == 'image') {
-                    if (/jpeg|jpg|png|gif/.test(req.files?.file2[0].mimetype.split('/')[1])) {
-                        requestBody["file2"] = `static/${req.files?.file2[0]?.filename}`
-                    } else {
-                        return showError({ message: "Please Upload Valid Image According To Its Type" }, res)
-                    }
+                  if (/jpeg|jpg|png|gif/.test(file.mimetype.split('/')[1])) {
+                    files2.push({
+                      name: file.originalname,
+                      type: 'image',
+                      path: `static/${file.filename}`,
+                      
+                    });
+                  } else {
+                    return showError({ message: "Please Upload Valid Image According To Its Type" }, res);
+                  }
+                } else if (requestBody.typeOfFile2 == 'pdf') {
+                  if (/pdf/.test(file.mimetype.split('/')[1])) {
+                    files2.push({
+                      name: file.originalname,
+                      type: 'pdf',
+                      path: `static/${file.filename}`,
+            
+                    });
+                  } else {
+                    return showError({ message: "Please Upload Valid file According To Its Type" }, res);
+                  }
                 }
-                else if (requestBody.typeOfFile2 == 'pdf') {
-
-                    if (/pdf/.test(req.files?.file2[0].mimetype.split('/')[1])) {
-                        requestBody["file2"] = `static/${req.files?.file2[0]?.filename}`
-                    } else {
-                        return showError({ message: "Please Upload Valid file According To Its Type" }, res)
-                    }
-                }
-
+              }
             } else {
-                return showError({ message: "Please Upload Document It Is Required Field" }, res)
+              return showError({ message: "Please Upload Document It Is Required Field" }, res);
             }
-            if (req.files?.file2) {
-                requestBody["file2"] = `static/${req.files?.file2[0]?.filename}`
-            }
+
+
+            requestBody['media1'] = files1
+            requestBody['media2'] = files2
+
+            console.log('requestBody', requestBody);
+
+          
 
             ////For dublicate email
             // const isDublicateEmail = await userModel.findOne({email : requestBody.email})
